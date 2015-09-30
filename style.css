@@ -1,3 +1,7 @@
 .ITORM-changed:hover {
   background: #eef;
 }
+
+.ITORM-span {
+  color: #f0f;
+}
