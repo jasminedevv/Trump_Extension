@@ -29,6 +29,7 @@ for (var i = 0; i < elements.length; i++) { //for each element
     if (node.nodeValue != null) {
       if (node.nodeValue.indexOf('Trump') >= 0 && node.nodeType === 3 && node.nodeName !== 'SPAN' && node.parentNode.nodeName !== 'SPAN') { //if it's a non-span text node with Trump in it
         changeText(node.nodeValue);
+        /* None of this span grabbing stuff works and I don't know why but the extension is still functional*/
       } else if (node.nodeValue.indexOf('Trump') >= 0 && node.nodeName == 'SPAN' && node.parentNode.nodeName != null) { // else if it's a span node with a parent
         changeText(node.parentNode.nodeValue); // change the text of it's parent node
         console.log("span #" + spanCount);
